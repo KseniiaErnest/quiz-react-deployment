@@ -15,7 +15,7 @@ html {
 
 body {
   min-height: 100vh;
-  padding: 2.2rem;
+  padding: 0.5rem 2.2rem 1rem;
   background-color: #F19483;
 }
 
@@ -50,13 +50,13 @@ body {
 }
 
 .header img {
-  width: 20rem;
+  width: 18rem;
   
 }
 
 /* MAIN */
 .main {
-  width: 40rem;
+  width: 45rem;
 }
 
 /* STARTSCREEN */
@@ -69,4 +69,51 @@ body {
 .startScreen-container h3 {
   padding: 0.7rem;
   margin-bottom: 1rem;
+}
+
+/* QUESTION & OPTIONS*/
+.question-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.question-container h4 {
+  font-size: 1.8rem;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 1.1rem;
+}
+
+.option {
+  transition: all 0.3s;
+  width: 75%;
+}
+
+.option:hover {
+background-color: #ff2200;
+transform: scale(1.1);
+}
+
+.option[disabled]:hover {
+  cursor: not-allowed;
+}
+
+
+
+.option.answerChosen {
+  transform: scale(1.1);
+  background-color: #ff2200;
+}
+
+.option.correctAnswer {
+background-color: #FFFFFB;
+}
+
+.option.wrongAnswer {
+  background-color: #7a1607;
 }
