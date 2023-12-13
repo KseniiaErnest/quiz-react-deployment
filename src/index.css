@@ -1,13 +1,72 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 100%;
+  font-family: 'Kiwi Maru', serif;
+  color: #080808;
+}
+
+body {
+  min-height: 100vh;
+  padding: 2.2rem;
+  background-color: #F19483;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-family: inherit;
+  background-color: #E83015;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid #4d180f9f;
+  padding: 0.5rem 1.5rem;
+  border-radius: 11px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: all 0.3s;
+}
+
+.btn:active {
+  transform: translateY(5px);
+}
+
+/* HEADER */
+
+.header {
+  text-align: center;
+}
+
+.header img {
+  width: 20rem;
+  
+}
+
+/* MAIN */
+.main {
+  width: 40rem;
+}
+
+/* STARTSCREEN */
+.startScreen-container {
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+
+.startScreen-container h3 {
+  padding: 0.7rem;
+  margin-bottom: 1rem;
 }
