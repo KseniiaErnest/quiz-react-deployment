@@ -15,43 +15,43 @@
   {
     "question": "Which shogunate brought an end to the Warring States period in Japan?",
     "options": ["Kamakura Shogunate", "Ashikaga Shogunate", "Tokugawa Shogunate", "Hojo Shogunate"],
-    "correctOption": 3,
+    "correctOption": 2,
     "points": 10
   },
   {
     "question": "The samurai class emerged during which historical period in Japan?",
     "options": ["Heian Period", "Edo Period", "Sengoku Period", "Muromachi Period"],
-    "correctOption": 3,
+    "correctOption": 2,
     "points": 10
   },
   {
     "question": "Who was the first European to reach Japan in 1543?",
     "options": ["Christopher Columbus", "Marco Polo", "Ferdinand Magellan", "Portuguese traders"],
-    "correctOption": 4,
+    "correctOption": 3,
     "points": 10
   },
   {
     "question": "What event led to the opening of Japan to the outside world in the 19th century?",
     "options": ["Meiji Restoration", "Opium War", "Perry's Expedition", "Treaty of Kanagawa"],
-    "correctOption": 4,
+    "correctOption": 2,
     "points": 10
   },
   {
     "question": "Which city was the capital of Japan during the Heian Period?",
     "options": ["Kyoto", "Nara", "Edo (Tokyo)", "Osaka"],
-    "correctOption": 1,
+    "correctOption": 0,
     "points": 10
   },
   {
     "question": "What was the code of conduct followed by the samurai?",
     "options": ["Bushido", "Zen", "Ronin", "Seppuku"],
-    "correctOption": 1,
+    "correctOption": 0,
     "points": 10
   },
   {
     "question": "Who unified Japan after the Warring States period?",
     "options": ["Oda Nobunaga", "Toyotomi Hideyoshi", "Tokugawa Ieyasu", "Date Masamune"],
-    "correctOption": 3,
+    "correctOption": 2,
     "points": 10
   },
   {
@@ -63,31 +63,31 @@
   {
     "question": "Which famous Japanese castle is known as the 'White Heron Castle'?",
     "options": ["Himeji Castle", "Osaka Castle", "Nagoya Castle", "Matsumoto Castle"],
-    "correctOption": 1,
+    "correctOption": 0,
     "points": 10
   },
   {
     "question": "Who is credited with introducing Buddhism to Japan in the 6th century?",
     "options": ["Prince Shotoku", "Emperor Kanmu", "Saicho", "Kukai"],
-    "correctOption": 1,
+    "correctOption": 0,
     "points": 10
   },
   {
     "question": "During which period did Japan experience the most significant cultural influence from China?",
     "options": ["Heian Period", "Kamakura Period", "Nara Period", "Muromachi Period"],
-    "correctOption": 3,
+    "correctOption": 2,
     "points": 10
   },
   {
     "question": "Which event led to the downfall of the Tokugawa Shogunate?",
     "options": ["Boshin War", "Satsuma Rebellion", "Battle of Sekigahara", "Meiji Restoration"],
-    "correctOption": 4,
+    "correctOption": 3,
     "points": 10
   },
   {
     "question": "Who was the first shogun of Japan?",
     "options": ["Tokugawa Ieyasu", "Oda Nobunaga", "Toyotomi Hideyoshi", "Minamoto no Yoritomo"],
-    "correctOption": 4,
+    "correctOption": 3,
     "points": 10
   }
 ]
