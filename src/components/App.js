@@ -5,12 +5,15 @@ import Loader from './Loader';
 import Error from './Error';
 import StartScreen from './StartScreen';
 import Question from './Question';
+import NextButton from './NextButton';
+import ProgressBar from './ProgressBar';
 
 const initialState = {
 questions: [],
 status: 'loading',
 currentIndex: 0,
 answer: null,
+points: 0,
 };
 
 function reducer(state, action) {
@@ -32,10 +35,19 @@ switch(action.type) {
           status: 'active',
         };
         case 'newAnswer':
+          const question = state.questions.at(state.currentIndex);
+
           return {
             ...state,
             answer: action.payload,
-          }
+            points: action.payload === question.correctOption ? state.points + question.points : state.points,
+          };
+          case 'nextQuestion':
+            return {
+              ...state,
+              currentIndex: state.currentIndex + 1,
+              answer: null,
+            }
 
 
     default:
@@ -45,9 +57,10 @@ switch(action.type) {
 };
 
 export default function App() {
-  const [{questions, status, currentIndex, answer}, dispatch] = useReducer(reducer, initialState);
+  const [{questions, status, currentIndex, answer, points}, dispatch] = useReducer(reducer, initialState);
 
   const numberOfQuestions = questions.length;
+  const maxPoints = questions.reduce((prev, cur) => prev + cur.points, 0);
 
   useEffect(function() {
 async function fetchQuestion() {
@@ -71,7 +84,17 @@ fetchQuestion();
 {status === 'loading' && <Loader />}
 {status === 'error' && <Error />}
 {status === 'ready' && <StartScreen numberOfQuestions={numberOfQuestions} dispatch={dispatch} />}
-{status === 'active' && <Question currentQuestion={questions[currentIndex]} dispatch={dispatch} answer={answer} />}
+{status === 'active' && (
+  <>
+  <Question currentQuestion={questions[currentIndex]} dispatch={dispatch} answer={answer} />
+<NextButton dispatch={dispatch} answer={answer} />
+<ProgressBar currentIndex={currentIndex} numberOfQuestions={numberOfQuestions} points={points} maxPoints={maxPoints} answer={answer}/>
+  </>
+)
+
+}
+
+
       </Main>
     </div>
   )
