@@ -92,7 +92,7 @@ export default function App() {
   useEffect(function() {
 async function fetchQuestion() {
   try {
-const res = await fetch('http://localhost:8000/questions');
+const res = await fetch('https://japanese-history-quiz-5d2198677274.herokuapp.com/api');
 const data = await res.json();
 dispatch({type: 'dataReceived', payload: data});
 
